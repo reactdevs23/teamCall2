@@ -1,0 +1,365 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1347px;
+  gap: 50px;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+}
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2px;
+}
+.header .subHeading {
+  color: var(--color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+}
+.header .heading {
+  color: var(--color);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header .usersContainer {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+.header .user {
+  color: var(--color);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12.139px;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -10px;
+  position: relative;
+}
+.header .user:last-child {
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: auto;
+
+  gap: 24px;
+  width: 100%;
+}
+.wrapper2 {
+  grid-template-columns: auto;
+}
+.teamsContainer {
+  border: var(--border);
+  background: var(--bg);
+
+  border-radius: 10px;
+}
+.teamsContainerHeader,
+.marketedNotesHeader {
+  border-bottom: var(--border);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.title {
+  color: var(--color);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.teamsContainer .steps {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.teamsContainer .step {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.teamsContainer .steps .circles {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: var(--border);
+  padding: 5px;
+  border-radius: 12.938px;
+  background: var(--bg);
+}
+.teamsContainer .steps .circles .circle {
+  width: 16.5px;
+  height: 16.5px;
+  border-radius: 50%;
+  background: var(--bg);
+  opacity: var(--opacity);
+}
+.label {
+  color: var(--color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.teamsContainer .teams {
+  padding: 15px 18px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+.teamsContainer .teams .team {
+  background: var(--bg);
+  border-radius: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.teamsContainer .teams .teamHeader {
+  border-bottom: var(--border);
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.teams .teamHeader .titleAndIcon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.teamsContainer .teamHeader .name {
+  color: var(--color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.teamsContainer .teamHeader .users {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.teamsContainer .teamHeader .users .user {
+  color: var(--color);
+  text-align: center;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teamsContainer .projectContent {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.teamsContainer .info {
+  color: var(--color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.teamsContainer .tasks {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+
+  margin-top: auto;
+}
+.teamsContainer .task {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 15px;
+  background: var(--bg);
+  padding: 10px 12px;
+  border-radius: 4px;
+}
+.teamsContainer .task .taskName {
+  color: var(--color);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.teamsContainer .tasks .step {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+}
+.teamsContainer .tasks .step .circle {
+  min-width: 13.719px;
+  max-width: 13.719px;
+  min-height: 13.719px;
+  max-height: 13.719px;
+  border-radius: 50%;
+  background: var(--bg);
+  opacity: var(--opacity);
+}
+.marketedNotes {
+  border: 1px solid;
+  border-color: var(--borderColor);
+  border-width: var(--borderWidth);
+  background: var(--bg);
+
+  border-radius: 10px;
+}
+
+.marketedNotes .statusContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.marketedNotes .statusContainer .status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.marketedNotesHeader .status .icon {
+  max-width: 25px;
+  width: 100%;
+}
+.allMarketNotes {
+  padding: 25px 18px;
+
+  gap: 50px;
+  position: relative;
+}
+.lineContianer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.lineContianer .line {
+  height: 100%;
+  width: var(--borderWidth);
+  background: var(--borderColor);
+}
+.allMarketNotes .marketNote {
+  display: flex;
+
+  gap: 28px;
+  break-inside: avoid;
+
+  margin-bottom: 20px;
+}
+
+.allMarketNotes .marketNote .infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  width: 100%;
+}
+.marketNote .user {
+  color: var(--color);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 12.139px;
+  min-width: 48.21px;
+  max-width: 48.21px;
+  aspect-ratio: 1/1;
+  height: 48.21px;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketNote .name {
+  color: var(--color);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.marketNote .listContainer {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+.curve {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-20px, 0);
+  z-index: -1;
+}
+.marketNote .listContainer .singleList {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.marketedNotes .listContainer .singleList .icon {
+  max-width: 18px;
+}
+.marketNote .listContainer .list,
+.marketNote .listContainer .text {
+  color: var(--color);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.marketNote .listContainer .list {
+  margin-left: 15px;
+}
