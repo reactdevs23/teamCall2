@@ -1,19 +1,22 @@
 import React from "react";
 import classes from "./ProjectTimeline.module.css";
 
-const Task = ({ task, phases }) => {
+const Task = ({ task, phases, taskName }) => {
   const taskStyle = {
-    width: `${task.width * (100 / phases.length)}%`,
-    marginLeft: `${task.start * (100 / phases.length)}%`,
+    width: `${task.timeLine.width * (100 / phases.length)}%`,
+    marginLeft: `${task.timeLine.start * (100 / phases.length)}%`,
   };
 
   return (
     <div className={classes.task} style={taskStyle}>
-      <p className={classes.name} style={{ "--color": task.color }}>
+      <p className={classes.name} style={{ "--color": task.timeLine.color }}>
         {" "}
-        {task.name}
+        {task.taskName}
       </p>
-      <div className={classes.taskBox} style={{ "--bg": task.bg }}></div>
+      <div
+        className={classes.taskBox}
+        style={{ "--bg": task.timeLine.bg }}
+      ></div>
     </div>
   );
 };
@@ -25,6 +28,7 @@ const ProjectTimeline = ({
   bg,
   border,
   phases,
+  teams,
   tasks,
 }) => {
   return (
@@ -60,9 +64,9 @@ const ProjectTimeline = ({
       </div>
 
       <div className={classes.allTask}>
-        {tasks.map((el, index) => (
+        {teams.map((el, index) => (
           <div className={classes.singleTask} key={index}>
-            {el.map((task, i) => (
+            {el.tasks.map((task, i) => (
               <Task key={i} task={task} phases={phases} />
             ))}
           </div>

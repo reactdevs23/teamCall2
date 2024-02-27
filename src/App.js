@@ -5,8 +5,6 @@ import Completed from "./images/Completed";
 import CurrenTask from "./images/CurrenTask";
 import Blocker from "./images/Blocker";
 
-import ProjectTimeline from "./components/ProjectTimeline/ProjectTimeline";
-
 function App() {
   const [allData, setAllData] = useState({
     fontFamily: "'Inter', sans-serif",
@@ -23,7 +21,8 @@ function App() {
         color: "#fff",
         fullName: "CHRISTOPHER WHITE",
 
-        bg: "#FF692E",
+        bg: "#333333",
+        teamName: "Team A",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -50,7 +49,8 @@ function App() {
         color: "#fff",
         fullName: "ZEYNEP PARTH",
 
-        bg: "#F79009",
+        bg: "#333333",
+        teamName: "Team A",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -70,7 +70,8 @@ function App() {
         color: "#fff",
         fullName: "BARRY ZEIGER",
 
-        bg: "#155EEF",
+        bg: "#333333",
+        teamName: "Team A",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -97,7 +98,8 @@ function App() {
         color: "#fff",
         fullName: "ROBERT TILL",
 
-        bg: "#1570EF",
+        bg: "#333333",
+        teamName: "Team B",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -115,10 +117,11 @@ function App() {
         },
       },
       {
-        name: "BV",
+        name: "AV",
         color: "#fff",
-        fullName: "BRIGITTE VAKEY",
-        bg: "#0086C9",
+        fullName: "Angel VAKEY",
+        bg: "#333333",
+        teamName: "Team B",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -144,7 +147,8 @@ function App() {
         name: "BV",
         color: "#fff",
         fullName: "BRIGITTE VAKEY",
-        bg: "#0086C9",
+        bg: "#333333",
+        teamName: "Team B",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -171,7 +175,8 @@ function App() {
         color: "#fff",
         fullName: "MICHAEL KEUGEL",
 
-        bg: "#088AB2",
+        bg: "#333333",
+        teamName: "Team C",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -190,89 +195,8 @@ function App() {
         name: "UV",
         color: "#fff",
         fullName: "UMA VAMAZ",
-
-        bg: "#0E9384",
-        listContainer: {
-          bg: "#F2F4F7",
-          lists: [
-            {
-              icon: <Completed color="#fff" bg="#32D583" />,
-              text: "Completed Lorem ipsum",
-              color: "#000",
-            },
-            {
-              icon: <CurrenTask color="#fff" bg="#FEC84B" />,
-              text: "Current task Lorem ipsum",
-              color: "#000",
-            },
-            {
-              icon: <Blocker color="#fff" bg="#FDA29B" />,
-              text: "Blocker Lorem ipsum",
-              color: "#000",
-            },
-          ],
-        },
-      },
-      {
-        name: "UV",
-        color: "#fff",
-        fullName: "UMA VAMAZ",
-
-        bg: "#0E9384",
-        listContainer: {
-          bg: "#F2F4F7",
-          lists: [
-            {
-              icon: <Completed color="#fff" bg="#32D583" />,
-              text: "Completed Lorem ipsum",
-              color: "#000",
-            },
-            {
-              icon: <CurrenTask color="#fff" bg="#FEC84B" />,
-              text: "Current task Lorem ipsum",
-              color: "#000",
-            },
-            {
-              icon: <Blocker color="#fff" bg="#FDA29B" />,
-              text: "Blocker Lorem ipsum",
-              color: "#000",
-            },
-          ],
-        },
-      },
-      {
-        name: "UV",
-        color: "#fff",
-        fullName: "UMA VAMAZ",
-
-        bg: "#0E9384",
-        listContainer: {
-          bg: "#F2F4F7",
-          lists: [
-            {
-              icon: <Completed color="#fff" bg="#32D583" />,
-              text: "Completed Lorem ipsum",
-              color: "#000",
-            },
-            {
-              icon: <CurrenTask color="#fff" bg="#FEC84B" />,
-              text: "Current task Lorem ipsum",
-              color: "#000",
-            },
-            {
-              icon: <Blocker color="#fff" bg="#FDA29B" />,
-              text: "Blocker Lorem ipsum",
-              color: "#000",
-            },
-          ],
-        },
-      },
-      {
-        name: "UV",
-        color: "#fff",
-        fullName: "UMA VAMAZ",
-
-        bg: "#0E9384",
+        bg: "#333333",
+        teamName: "Team C",
         listContainer: {
           bg: "#F2F4F7",
           lists: [
@@ -311,70 +235,6 @@ function App() {
         { label: "Phase2", labelColor: "#000", bg: "#F2F4F7" },
         { label: "Phase3", labelColor: "#000", bg: "#F2F4F7" },
         { label: "Phase4", labelColor: "#000", bg: "#F2F4F7" },
-      ],
-      tasks: [
-        [
-          {
-            name: "Task 1",
-            color: "#000",
-            start: 0,
-            width: 1,
-            bg: "#2970FF",
-          },
-          {
-            name: "Task 2",
-            color: "#000",
-            start: 1,
-            width: 1,
-            bg: "#2970FF",
-          },
-          {
-            name: "Task 3",
-            color: "#000",
-            start: 1,
-            width: 1,
-            bg: "#2970FF",
-          },
-        ],
-        [
-          {
-            name: "Task 1",
-            color: "#000",
-            start: 0,
-            width: 1,
-            bg: "#7F56D9",
-          },
-          {
-            name: "Task 2",
-            color: "#000",
-            start: 0.7,
-            width: 1.5,
-            bg: "#7F56D9",
-          },
-          {
-            name: "Task 3",
-            color: "#000",
-            start: 2,
-            width: 1,
-            bg: "#7F56D9",
-          },
-        ],
-        [
-          {
-            name: "Task 1",
-            color: "#000",
-            start: 2,
-            width: 1,
-            bg: "#FF692E",
-          },
-          {
-            name: "Task 2",
-            color: "#000",
-            start: 2.5,
-            width: 1.5,
-            bg: "#FF692E",
-          },
-        ],
       ],
     },
     responsibilities: {
@@ -448,11 +308,6 @@ function App() {
             teamName: "Team A",
             teamNameColor: "#000",
             border: "1px solid #D0D5DD",
-            users: [
-              { name: "BZ", color: "#fff", bg: "#155EEF" },
-              { name: "RT", color: "#fff", bg: "#1570EF" },
-              { name: "MK", color: "#fff", bg: "#088AB2" },
-            ],
           },
           info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt magna aliquyam",
           infoColor: "#000",
@@ -466,6 +321,12 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 0,
+                width: 1,
+                bg: "#2970FF",
+              },
             },
             {
               bg: "#fff",
@@ -476,6 +337,12 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 1,
+                width: 1,
+                bg: "#2970FF",
+              },
             },
             {
               bg: "#fff",
@@ -486,6 +353,12 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 1,
+                width: 1,
+                bg: "#2970FF",
+              },
             },
             {
               bg: "#fff",
@@ -496,6 +369,12 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 2,
+                width: 1,
+                bg: "#2970FF",
+              },
             },
           ],
         },
@@ -506,11 +385,6 @@ function App() {
             teamName: "Team B",
             teamNameColor: "#000",
             border: "1px solid #D0D5DD",
-            users: [
-              { name: "ZP", color: "#fff", bg: "#444CE7" },
-              { name: "CW", color: "#fff", bg: "#7F56D9" },
-              { name: "AB", color: "#fff", bg: "#BA24D5" },
-            ],
           },
           info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt magna aliquyam",
           infoColor: "#000",
@@ -524,6 +398,7 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: { color: "#000", start: 0, width: 1, bg: "#7F56D9" },
             },
             {
               bg: "#fff",
@@ -534,6 +409,12 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 0.7,
+                width: 1.5,
+                bg: "#7F56D9",
+              },
             },
             {
               bg: "#fff",
@@ -544,6 +425,7 @@ function App() {
                 { bg: "#32D583" },
                 { bg: "#32D583", opacity: "0.3" },
               ],
+              timeLine: { color: "#000", start: 2, width: 1, bg: "#7F56D9" },
             },
           ],
         },
@@ -554,11 +436,6 @@ function App() {
             teamName: "Team B",
             teamNameColor: "#000",
             border: "1px solid #D0D5DD",
-            users: [
-              { name: "BZ", color: "#fff", bg: "#FF692E" },
-              { name: "RT", color: "#fff", bg: "#F79009" },
-              { name: "MK", color: "#fff", bg: "#FEC84B" },
-            ],
           },
           info: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt magna aliquyam",
           infoColor: "#000",
@@ -572,6 +449,12 @@ function App() {
                 { bg: "#EAECF0" },
                 { bg: "#EAECF0" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 2,
+                width: 1,
+                bg: "#FF692E",
+              },
             },
             {
               bg: "#fff",
@@ -582,6 +465,12 @@ function App() {
                 { bg: "#EAECF0" },
                 { bg: "#EAECF0" },
               ],
+              timeLine: {
+                color: "#000",
+                start: 2.5,
+                width: 1.5,
+                bg: "#FF692E",
+              },
             },
           ],
         },

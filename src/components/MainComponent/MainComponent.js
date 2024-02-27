@@ -55,7 +55,7 @@ const MainComponent = ({
           </div>
         </div>
         <div className={[classes.wrapper].join(" ")}>
-          <ProjectTimeline {...projectTimeline} />
+          <ProjectTimeline {...projectTimeline} teams={teams} />
           <div
             className={classes.teamsContainer}
             style={{ "--bg": bg, "--border": border }}
@@ -133,15 +133,21 @@ const MainComponent = ({
                         </h5>
                       </div>
                       <div className={classes.users}>
-                        {teamHeader?.users?.map((user, i) => (
-                          <p
-                            className={classes.user}
-                            key={i}
-                            style={{ "--bg": user.bg, "--color": user.color }}
-                          >
-                            {user.name}
-                          </p>
-                        ))}
+                        {users
+                          ?.filter(
+                            (el) =>
+                              el.teamName.toLowerCase() ===
+                              teamHeader.teamName.toLowerCase()
+                          )
+                          .map((user, i) => (
+                            <p
+                              className={classes.user}
+                              key={i}
+                              style={{ "--bg": user.bg, "--color": user.color }}
+                            >
+                              {user.name}
+                            </p>
+                          ))}
                       </div>
                     </div>
                     <div className={classes.projectContent}>
